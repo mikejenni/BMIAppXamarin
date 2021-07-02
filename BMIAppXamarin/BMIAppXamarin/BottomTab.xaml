@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:BMIAppXamarin.Views" 
+       xmlns:bmiappxamarin="clr-namespace:BMIAppXamarin" 
+       x:DataType="bmiappxamarin:BottomTab"
+       x:Class="BMIAppXamarin.BottomTab">
+    
+    
+    <TabBar>
+        <Tab Title="Calculator" Icon="Calculator_WF.png">
+            <ShellContent ContentTemplate="{DataTemplate local:BMICalculatorPage}" />
+        </Tab>
+        <Tab Title="Settings" Icon="UserSettings_02_WF.png">
+            <ShellContent ContentTemplate="{DataTemplate local:BMISettingsPage}" />
+        </Tab>
+        <Tab Title="History" Icon="history.png">
+            <ShellContent ContentTemplate="{DataTemplate local:BMISavingsPage}" />
+        </Tab>
+        <Tab Title="Details" Icon="list.pgn">
+            <ShellContent ContentTemplate="{DataTemplate local:BMIDetailPage}" />
+        </Tab>
+    </TabBar>
+</Shell>

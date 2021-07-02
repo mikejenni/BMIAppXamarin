@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BMIAppXamarin.ViewModels"
+             x:Class="BMIAppXamarin.Views.StartingPage">
+
+    <ContentPage.BindingContext>
+        <vm:StartingPageViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="BMI App Xamarin" HorizontalTextAlignment="Start" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="BMI explained:" FontSize="Title" Padding="30,30,30,30"/>
+            <Label Text="Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres." FontSize="16" Padding="30,0,30,0"/>
+
+            <Button Text="Start"
+            FontSize="16"
+            Margin="20"
+            HeightRequest="60"
+            VerticalOptions="EndAndExpand"
+            Command="{Binding StartBMI}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
